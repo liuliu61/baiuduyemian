@@ -1,0 +1,777 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>官方标识-小红书蓝V认证平台</title>
+    <meta name="Keywords" content="帮助企业号提高蓝v认证，包括个人蓝v认证、门店个体户蓝v认证、企业蓝v认证。官方蓝v认证标识。蓝V企业认证、视频号企业认证、小红书蓝V认证、小红书企业认证、百度蓝V认证">
+    <meta name="Description" content="官方蓝v认证标识，帮助企业号提高蓝v认证，包括个人蓝v认证、门店个体户蓝v认证、企业蓝v认证。">
+    <link href="./imgs/favicon.png" type="image/x-icon" rel="icon">
+    <link rel="stylesheet" type="text/css" href="static/css/wzck-app.css">
+    <link rel="stylesheet" type="text/css" href="static/css/index.css">
+    <link rel="stylesheet" type="text/css" href="static/css/app.css">
+    <link rel="stylesheet" type="text/css" href="static/css/index-2.css">
+    <link rel="stylesheet" type="text/css" href="static/css/ktfw.css">
+    <script src="static/js/keyword.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function browserRedirect() {
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+            var bIsAndroid = sUserAgent.match(/android/i) == "android";
+            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+            if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+                window.location.href = './wap/index.html';
+            }
+        }
+        browserRedirect();
+    </script>
+</head>
+
+<body>
+
+    <div class="banner">
+        <header class="top">
+            <div class="top_cen">
+                <div class="top_logo"><img src="static/picture/logo-1.png" style="height: 26px;" id="top_logo_id">
+                </div>
+            </div>
+        </header>
+        <div class="banner_cen">
+            <div>
+                <div class="banner_cen_title ktfw">
+                    小红书企业号 <span>蓝V</span> 认证
+                    <!-- <div class="banner_cen_title_text">官方标识</div> -->
+                </div>
+                <div class="banner_nav_box" style="margin-top: 45px;">
+                    <input type="text" id="banner_phone" maxlength="11" class="banenr_inp" placeholder="输入开通手机号">
+                    <div class="banenr_btn ktfw wzck_btn_dx">点击认证</div>
+                </div> 
+                <!-- <div class="banner_cen_btn wzck_btn_dx ktfw" style="margin-top: 45px;">点击认证</div> -->
+                <div class="banner_cen_text1 ktfw" style="margin-top: 28px;">一次办理 &nbsp; 永久有效</div>
+                <div class="ktfw" id="swiper2" style="margin-top: 60px;width:500px">
+                    <el-carousel height="50px" direction="vertical" indicator-position="none">
+                        <el-carousel-item v-for="item in list" :key="item" style="display: flex;align-items: center;">
+                            <div class="ktbg_box_right_heads_box2">
+                                <div style="width: 24px;height: 24px;border-radius: 50%;overflow: hidden;margin-right: 10px;">
+                                    <img :src="item.img" style="width: 24px;">
+                                </div>
+                                <div class="ktbg_box_right_heads_box_text2">{{item.name}} 刚刚办理完成 </div>
+                                <!-- <div class="ktbg_box_right_heads_box_text2" style="margin-left: 5px;">{{item.text}} -->
+                            </div>
+                </el-carousel-item></el-carousel></div>
+                
+                
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="banner_nav">
+        <div class="banner_nav_item">
+            <div class="banner_nav_item_top">
+                <img src="static/picture/1.png" alt="">
+                <div class="banner_nav_item_title">蓝V标识</div>
+            </div>
+            <div class="banner_nav_item_text">官方蓝V认证标识，账号名称唯一</div>
+        </div>
+        <div class="banner_nav_item">
+            <div class="banner_nav_item_top">
+                <img src="static/picture/2.png" alt="">
+                <div class="banner_nav_item_title">获客工具</div>
+            </div>
+            <div class="banner_nav_item_text">搜索排名置顶，解锁预约、咨询工具</div>
+        </div>
+        <div class="banner_nav_item">
+            <div class="banner_nav_item_top">
+                <img src="static/picture/3.png" alt="">
+                <div class="banner_nav_item_title">推广工具</div>
+            </div>
+            <div class="banner_nav_item_text">直播带货+购物车，流量扶持</div>
+        </div>
+        <div class="banner_nav_item">
+            <div class="banner_nav_item_top">
+                <img src="static/picture/4.png" alt="">
+                <div class="banner_nav_item_title">品牌建设</div>
+            </div>
+            <div class="banner_nav_item_text">提升品牌权威性，商家品牌展示页</div>
+        </div>
+    </div>
+    <div class="dylv_box1">
+        <div class="dylv_box1_nav">
+            <div class="dylv_box1_nav_item ktfw" data-subject="个体户">
+                <img src="static/picture/11.png" alt="">
+                <div>
+                    <div class="dylv_box1_nav_item_title">门店/个体工商户</div>
+                    <div class="dylv_box1_nav_item_text">适合营业执照类型为“个体工商户”</div>
+                </div>
+                <div class="dylv_box1_nav_item_btn wzck_btn_dx">点击认证</div>
+            </div>
+            <div class="dylv_box1_nav_item ktfw" data-subject="企业">
+                <img src="static/picture/21.png" alt="">
+                <div>
+                    <div class="dylv_box1_nav_item_title">企业/公司</div>
+                    <div class="dylv_box1_nav_item_text">适合营业执照类型为“公司/企业/个人独资企业”等</div>
+                </div>
+                <div class="dylv_box1_nav_item_btn wzck_btn_dx">点击认证</div>
+            </div>
+            <div class="dylv_box1_nav_item ktfw" data-subject="个人">
+                <img src="static/picture/31.png" alt="">
+                <div>
+                    <div class="dylv_box1_nav_item_title">个人</div>
+                    <div class="dylv_box1_nav_item_text">适合无营业执照，个人身份</div>
+                </div>
+                <div class="dylv_box1_nav_item_btn wzck_btn_dx">点击认证</div>
+            </div>
+        </div>
+        <div class="dylv_title">开通企业号<span style="color: #366EFB;">蓝V</span>认证 &nbsp;抢占流量先机</div>
+        <div class="dylv_box1_list ktfw">
+            <div class="dylv_box1_item">
+                <div class="dylv_box1_item_top">
+                    <img src="static/picture/12.png" alt="">
+                    <div class="dylv_box1_item_title">官方蓝V标识</div>
+                </div>
+                <div class="dylv_box1_item_list">
+                    <div class="dylv_box1_item_list_item">
+                        <img src="static/picture/success.png" alt="">
+                        官方认证蓝V标识
+                    </div>
+                    <div class="dylv_box1_item_list_item">
+                        <img src="static/picture/success.png" alt="">
+                        账号名称具有唯一性
+                    </div>
+                    <div class="dylv_box1_item_list_item">
+                        <img src="static/picture/success.png" alt="">
+                        认证信息同步至头条/火山
+                    </div>
+                    <div class="dylv_box1_item_list_item">
+                        <img src="static/picture/success.png" alt="">
+                        独特的商家页面展示
+                    </div>
+                </div>
+            </div>
+            <div class="dylv_box1_item">
+                <div class="dylv_box1_item_top">
+                    <img src="static/picture/22.png" alt="">
+                    <div class="dylv_box1_item_title">获客工具</div>
+                </div>
+                <div class="dylv_box1_item_list">
+                    <div class="dylv_box1_item_list_item">
+                        <img src="static/picture/success.png" alt="">
+                        搜索排名置顶
+                    </div>
+                    <div class="dylv_box1_item_list_item">
+                        <img src="static/picture/success.png" alt="">
+                        在线预约、咨询
+                    </div>
+                    <div class="dylv_box1_item_list_item">
+                        <img src="static/picture/success.png" alt="">
+                        粉丝数据画像分析
+                    </div>
+                    <div class="dylv_box1_item_list_item">
+                        <img src="static/picture/success.png" alt="">
+                        私信自动回复与自定义菜单
+                    </div>
+                </div>
+            </div>
+            <div class="dylv_box1_item">
+                <div class="dylv_box1_item_top">
+                    <img src="static/picture/32.png" alt="">
+                    <div class="dylv_box1_item_title">推广工具</div>
+                </div>
+                <div class="dylv_box1_item_list">
+                    <div class="dylv_box1_item_list_item">
+                        <img src="static/picture/success.png" alt="">
+                        广告营销豁免权
+                    </div>
+                    <div class="dylv_box1_item_list_item">
+                        <img src="static/picture/success.png" alt="">
+                        解锁直播带货、购物车等
+                    </div>
+                    <div class="dylv_box1_item_list_item">
+                        <img src="static/picture/success.png" alt="">
+                        流量扶持与算法倾斜
+                    </div>
+                    <div class="dylv_box1_item_list_item">
+                        <img src="static/picture/success.png" alt="">
+                        视频置顶功能
+                    </div>
+                </div>
+            </div>
+            <div class="dylv_box1_item">
+                <div class="dylv_box1_item_top">
+                    <img src="static/picture/41.png" alt="">
+                    <div class="dylv_box1_item_title">品牌建设</div>
+                </div>
+                <div class="dylv_box1_item_list">
+                    <div class="dylv_box1_item_list_item">
+                        <img src="static/picture/success.png" alt="">
+                        增强品牌权威性与公信力
+                    </div>
+                    <div class="dylv_box1_item_list_item">
+                        <img src="static/picture/success.png" alt="">
+                        丰富的商家页面展示空间
+                    </div>
+                    <div class="dylv_box1_item_list_item">
+                        <img src="static/picture/success.png" alt="">
+                        内容审核宽容度高
+                    </div>
+                    <div class="dylv_box1_item_list_item">
+                        <img src="static/picture/success.png" alt="">
+                        跨平台联动与品牌资产沉淀
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dytg_ktfw_btn ktfw">点击认证</div>
+    </div>
+
+    <div class="dylv_box2 ktfw">
+        <div class="dylv_title"><span style="color: #FF7824;">20+</span>尊享权益 &nbsp;蓝V认证独享</div>
+        <div class="dylv_box2_list">
+            <div class="dylv_box2_list_item">
+                <img src="static/picture/17.png" alt="">
+                <div>
+                    <div class="dylv_box2_list_item_title">官方认证蓝V标识</div>
+                    <div class="dylv_box2_list_item_text">蓝V标识彰显企业官方权威身份， 有效提升用户信任感</div>
+                </div>
+            </div>
+            <div class="dylv_box2_list_item">
+                <img src="static/picture/23.png" alt="">
+                <div>
+                    <div class="dylv_box2_list_item_title">账号名称具有唯一性</div>
+                    <div class="dylv_box2_list_item_text">全平台昵称独占，防止品牌被仿冒，保护企业权益</div>
+                </div>
+            </div>
+            <div class="dylv_box2_list_item">
+                <img src="static/picture/33.png" alt="">
+                <div>
+                    <div class="dylv_box2_list_item_title">认证信息同步至头条/火山</div>
+                    <div class="dylv_box2_list_item_text">一次认证，抖音、头条、火山三平台同步显示官方身份</div>
+                </div>
+            </div>
+            <div class="dylv_box2_list_item">
+                <img src="static/picture/42.png" alt="">
+                <div>
+                    <div class="dylv_box2_list_item_title">独特的商家页面展示</div>
+                    <div class="dylv_box2_list_item_text">专属页面可展示产品、服务与联系方式，提升品牌专业形象</div>
+                </div>
+            </div>
+
+            <div class="dylv_box2_list_item">
+                <img src="static/picture/5.png" alt="">
+                <div>
+                    <div class="dylv_box2_list_item_title">搜索排名置顶</div>
+                    <div class="dylv_box2_list_item_text">用户搜索关键词时优先展示，有效拦截精准流量，提升品牌曝光</div>
+                </div>
+            </div>
+            <div class="dylv_box2_list_item">
+                <img src="static/picture/6.png" alt="">
+                <div>
+                    <div class="dylv_box2_list_item_title">在线预约、咨询</div>
+                    <div class="dylv_box2_list_item_text">主页提供预约入口，方便用户快速提交需求，提升销售效率</div>
+                </div>
+            </div>
+            <div class="dylv_box2_list_item">
+                <img src="static/picture/7.png" alt="">
+                <div>
+                    <div class="dylv_box2_list_item_title">粉丝数据画像分析</div>
+                    <div class="dylv_box2_list_item_text">后台提供粉丝年龄、性别、兴趣等数据，助力内容精准创作投放</div>
+                </div>
+            </div>
+            <div class="dylv_box2_list_item">
+                <img src="static/picture/8.png" alt="">
+                <div>
+                    <div class="dylv_box2_list_item_title">私信自动回复与自定义菜单</div>
+                    <div class="dylv_box2_list_item_text">可设置关键词自动回复与快捷菜单，提升效率，避免商机遗漏</div>
+                </div>
+            </div>
+
+            <div class="dylv_box2_list_item">
+                <img src="static/picture/9.png" alt="">
+                <div>
+                    <div class="dylv_box2_list_item_title">广告营销豁免权</div>
+                    <div class="dylv_box2_list_item_text">蓝V账号可自由发布营销内容，享受广告审核豁免，不易被限流</div>
+                </div>
+            </div>
+            <div class="dylv_box2_list_item">
+                <img src="static/picture/10.png" alt="">
+                <div>
+                    <div class="dylv_box2_list_item_title">解锁直播带货、购物车等</div>
+                    <div class="dylv_box2_list_item_text">支持直播带货、购物车等功能，无需粉丝门槛，促进销售转化</div>
+                </div>
+            </div>
+            <div class="dylv_box2_list_item">
+                <img src="static/picture/111.png" alt="">
+                <div>
+                    <div class="dylv_box2_list_item_title">流量扶持与算法倾斜</div>
+                    <div class="dylv_box2_list_item_text">平台为蓝V账号提供流量扶持，内容更易获得推荐和更高曝光</div>
+                </div>
+            </div>
+            <div class="dylv_box2_list_item">
+                <img src="static/picture/121.png" alt="">
+                <div>
+                    <div class="dylv_box2_list_item_title">视频置顶功能</div>
+                    <div class="dylv_box2_list_item_text">可将重要视频置顶主页，持续展示核心内容，提升曝光和转化</div>
+                </div>
+            </div>
+
+            <div class="dylv_box2_list_item">
+                <img src="static/picture/13.png" alt="">
+                <div>
+                    <div class="dylv_box2_list_item_title">增强品牌权威与公信力</div>
+                    <div class="dylv_box2_list_item_text">蓝V官方认证彰显企业正规性，提升用户信任与专业形象</div>
+                </div>
+            </div>
+            <div class="dylv_box2_list_item">
+                <img src="static/picture/14.png" alt="">
+                <div>
+                    <div class="dylv_box2_list_item_title">​​丰富商家页面展示</div>
+                    <div class="dylv_box2_list_item_text">专属主页可展示产品、服务、官网及联系方式，全面呈现企业信息</div>
+                </div>
+            </div>
+            <div class="dylv_box2_list_item">
+                <img src="static/picture/15.png" alt="">
+                <div>
+                    <div class="dylv_box2_list_item_title">内容审核更宽松</div>
+                    <div class="dylv_box2_list_item_text">享有广告豁免权，发布行业资讯及产品介绍时减少限流</div>
+                </div>
+            </div>
+            <div class="dylv_box2_list_item">
+                <img src="static/picture/16.png" alt="">
+                <div>
+                    <div class="dylv_box2_list_item_title">​​跨平台联动与品牌沉淀</div>
+                    <div class="dylv_box2_list_item_text">一次认证，抖音、头条、火山同步显示，助力品牌资产积累与曝光</div>
+                </div>
+            </div>
+        </div>
+        <div class="dytg_ktfw_btn" style="margin-top:38px">点击认证</div>
+    </div>
+    <div class="dylv_box3 ktfw">
+        <div class="dylv_title" style="padding: 50px 0 40px;">常见问题</div>
+        <div class="dylv_box3_list">
+            <div class="dylv_box3_item">
+                <!-- <div class="dylv_box3_item_icon">问</div> -->
+                <div>
+                    <div class="dylv_box3_item_title">1.认证后多久完成?</div>
+                    <div class="dylv_box3_item_text">资料齐全的情况下，1-3个工作日即可完成蓝V认证。</div>
+                </div>
+            </div>
+            <div class="dylv_box3_item">
+                <!-- <div class="dylv_box3_item_icon">问</div> -->
+                <div>
+                    <div class="dylv_box3_item_title">2.认证的有效期？</div>
+                    <div class="dylv_box3_item_text">认证后一般情况下持续有效，且账号归属于认证主体。若出现资质认证材料过期、失效等情况，平台会以站内信的形式通知。</div>
+                </div>
+            </div>
+            <div class="dylv_box3_item">
+                <!-- <div class="dylv_box3_item_icon">问</div> -->
+                <div>
+                    <div class="dylv_box3_item_title">3.支持一个主体多少个账号认证吗?</div>
+                    <div class="dylv_box3_item_text">支持，具体一个主体可以认证多少个企业号，以页面实际展示为准。</div>
+                </div>
+            </div>
+            <div class="dylv_box3_item">
+                <!-- <div class="dylv_box3_item_icon">问</div> -->
+                <div>
+                    <div class="dylv_box3_item_title">4.认证要准备的资料?</div>
+                    <div class="dylv_box3_item_text">
+                        支持按类型认证，个人、个体户、企业；<br><br>
+                        主要包括资质资料、实名认证信息、运营人员联系方式等；<br><br>
+                        特殊行业需要对应的行业资质，具体联系审核人员帮助匹配校对。
+                    </div>
+                </div>
+            </div>
+            <div class="dylv_box3_item">
+                <!-- <div class="dylv_box3_item_icon">问</div> -->
+                <div>
+                    <div class="dylv_box3_item_title">5.认证标识是否可以改名称?</div>
+                    <div class="dylv_box3_item_text">可以修改，但需提供新的实名资料进行审核。</div>
+                </div>
+            </div>
+        </div>
+        <div class="dytg_ktfw_btn" style="margin-top: 35px">点击认证</div>
+    </div>
+    <div class="dylv_box4 ktfw">
+        <div class="dylv_title" style="padding: 40px 0 0px;">100,000+品牌的选择</div>
+        <div class="wzck_tmdzy" id="wzck_tmdzy" style="height: 200px;width: 1240px;">
+            <el-carousel indicator-position="none" :interval="4000" height="200px">
+                <el-carousel-item v-for="(item,index) in list" :key="index">
+                    <div class="wzck_tmdzy_box_nav">
+                        <div class="wzck_tmdzy_box" v-for="(ite,inde) in item" :key="inde">
+                            <div class="wzck_tmdzy_box_img">
+                                <img :src="ite.logo" class="wzck_imgblock">
+                            </div>
+                            <div class="wzck_tmdzy_box_bg"></div>
+                            <div class="wzck_tmdzy_box_name">{{ite.name}}</div>
+                        </div>
+                    </div>
+                </el-carousel-item>
+            </el-carousel>
+        </div>
+        <div class="wzck_tmdzy" id="wzck_tmdzy1" style="height: 200px;width: 1240px;">
+            <el-carousel indicator-position="none" :interval="5000" height="200px">
+                <el-carousel-item v-for="(item,index) in list" :key="index">
+                    <div class="wzck_tmdzy_box_nav">
+                        <div class="wzck_tmdzy_box" v-for="(ite,inde) in item" :key="inde">
+                            <div class="wzck_tmdzy_box_img">
+                                <img :src="ite.logo" class="wzck_imgblock">
+                            </div>
+                            <div class="wzck_tmdzy_box_bg"></div>
+                            <div class="wzck_tmdzy_box_name">{{ite.name}}</div>
+                        </div>
+                    </div>
+                </el-carousel-item>
+            </el-carousel>
+        </div>
+        <div class="dytg_ktfw_btn" style="margin-top:40px">点击认证</div>
+    </div>
+
+    <div class="wzck_footer">
+        <div class="wzck_footer_bot"></div>
+    </div>
+
+    <div class="wzck_index_bot">
+        <div class="biaoti ktfw">
+            <div class="biaoti_box">
+                <div class="biaoti_box_left">只需2步 &nbsp; <span style="font-size: 32px;">办理 &nbsp;企业号蓝V认证</span></div>
+                <div class="biaoti_box_right wzck_btn_dx">点击认证</div>
+            </div>
+        </div>
+    </div>
+    <!-- 弹窗 -->
+    <div class="dytg_showModal_bg">
+        <div class="dytg_showModal_box">
+            <img src="static/picture/cuo.png" class="wzck_kbbk_dytg_cuo">
+            <div class="dytg_showModal_box_left">
+                <div class="dytg_showModal_box_left_title">
+                    <img src="static/picture/icon.png" alt="">
+                    企业号<span>蓝V</span>认证&nbsp;<span style="font-size: 16px;font-weight: 400;color: #333333;">|&nbsp;官方标识</span>
+                    <!-- <div class="dytg_showModal_box_left_title_tag">官方</div> -->
+                </div>
+                <div class="dytg_showModal_box_left_list">
+                    <div class="dytg_showModal_box_left_list_item">
+                        <img src="static/picture/18.png" alt="">
+                        <div>
+                            <div class="dytg_showModal_box_left_list_item_title">官方权威标识</div>
+                            <div class="dytg_showModal_box_left_list_item_text">官方认证标识，提升品牌信任与搜索权重</div>
+                        </div>
+                    </div>
+                    <div class="dytg_showModal_box_left_list_item">
+                        <img src="static/picture/24.png" alt="">
+                        <div>
+                            <div class="dytg_showModal_box_left_list_item_title">精准获客</div>
+                            <div class="dytg_showModal_box_left_list_item_text">多维工具锁定目标客群，主动触发商机咨询</div>
+                        </div>
+                    </div>
+                    <div class="dytg_showModal_box_left_list_item">
+                        <img src="static/picture/34.png" alt="">
+                        <div>
+                            <div class="dytg_showModal_box_left_list_item_title">流量扶持</div>
+                            <div class="dytg_showModal_box_left_list_item_text">免费流量+推广工具组合，有效提升转化效率</div>
+                        </div>
+                    </div>
+                    <div class="dytg_showModal_box_left_list_item">
+                        <img src="static/picture/43.png" alt="">
+                        <div>
+                            <div class="dytg_showModal_box_left_list_item_title">品牌沉淀</div>
+                            <div class="dytg_showModal_box_left_list_item_text">持续积累品牌资产，构建私域忠诚用户池</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dytg_showModal_box_right">
+                <div class="dytg_showModal_box_right_title">请选择认证类型</div>
+                <div class="dytg_showModal_box_right_item ktfw" data-subject="个体户">
+                    <div>
+                        <div class="dytg_showModal_box_right_item_title">
+                            <img src="static/picture/11.png" alt="">
+                            门店/个体工商户
+                        </div>
+                        <div class="dytg_showModal_box_right_item_text">适合营业执照类型为“个体工商户”</div>
+                    </div>
+                    <div class="dytg_showModal_box_right_item_btn">点击认证</div>
+                </div>
+                <div class="dytg_showModal_box_right_item ktfw" data-subject="企业">
+                    <div>
+                        <div class="dytg_showModal_box_right_item_title">
+                            <img src="static/picture/21.png" alt="">
+                            企业/公司
+                        </div>
+                        <div class="dytg_showModal_box_right_item_text">适合营业执照类型为“公司/企业/个人独资企业”等</div>
+                    </div>
+                    <div class="dytg_showModal_box_right_item_btn">点击认证</div>
+                </div>
+                <div class="dytg_showModal_box_right_item ktfw" data-subject="个人">
+                    <div>
+                        <div class="dytg_showModal_box_right_item_title">
+                            <img src="static/picture/31.png" alt="">
+                            个人
+                        </div>
+                        <div class="dytg_showModal_box_right_item_text">适合无营业执照，个人身份</div>
+                    </div>
+                    <div class="dytg_showModal_box_right_item_btn">点击认证</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 开通弹窗 -->
+    <div class="wzck_kbbk_ktbg" style="display: none;">
+
+        <div class="ktbg_box">
+            <img src="static/picture/cuo.png" class="wzck_kbbk_sskt_cuo">
+
+            <div class="ktbg_box_left">
+                <div class="ktbg_box_left_top">
+                    <img src="static/picture/icon.png" alt="">
+                    企业号<span>蓝V</span>认证&nbsp;<span style="font-size: 16px;font-weight: 400;color: #333333;">|&nbsp;官方标识</span>
+                    <!-- <div class="ktbg_box_left_top_tag">官方</div> -->
+                </div>
+                <div style="font-size: 14px;color: #666666;text-align: center;">2步在线办理 &nbsp;永久有效</div>
+                <div class="ktbg_box_left_boxs" style="overflow: hidden;margin-top: 35px;">
+                    <div class="ktbg_box_left_box">
+                        <img src="static/picture/19.png">
+                        <div class="ktbg_box_left_box_text">官方标识</div>
+                    </div>
+                    <div class="ktbg_box_left_box">
+                        <img src="static/picture/25.png">
+                        <div class="ktbg_box_left_box_text">品牌权威</div>
+                    </div>
+                    <div class="ktbg_box_left_box">
+                        <img src="static/picture/35.png">
+                        <div class="ktbg_box_left_box_text">流量倾斜</div>
+                    </div>
+                    <div class="ktbg_box_left_box">
+                        <img src="static/picture/44.png">
+                        <div class="ktbg_box_left_box_text">搜索排名置顶</div>
+                    </div>
+                    <div class="ktbg_box_left_box">
+                        <img src="static/picture/51.png">
+                        <div class="ktbg_box_left_box_text">在线预约、咨询</div>
+                    </div>
+                    <div class="ktbg_box_left_box">
+                        <img src="static/picture/61.png">
+                        <div class="ktbg_box_left_box_text">直播及购物车</div>
+                    </div>
+                    <div class="ktbg_box_left_box">
+                        <img src="static/picture/71.png">
+                        <div class="ktbg_box_left_box_text">名称唯一性</div>
+                    </div>
+                    <div class="ktbg_box_left_box">
+                        <img src="static/picture/81.png">
+                        <div class="ktbg_box_left_box_text">商家品牌页</div>
+                    </div>
+                    <div class="ktbg_box_left_box">
+                        <img src="static/picture/91.png">
+                        <div class="ktbg_box_left_box_text">自定义菜单</div>
+                    </div>
+                    <div class="ktbg_box_left_box">
+                        <img src="static/picture/101.png">
+                        <div class="ktbg_box_left_box_text">视频置顶功能</div>
+                    </div>
+                    <div class="ktbg_box_left_box">
+                        <img src="static/picture/112.png">
+                        <div class="ktbg_box_left_box_text">用户沉淀</div>
+                    </div>
+                    <div class="ktbg_box_left_box">
+                        <img src="static/picture/122.png">
+                        <div class="ktbg_box_left_box_text">内容审核更宽松</div>
+                    </div>
+                </div>
+                <div class="ktbg_box_right_heads" id="swiper1" style="margin-top: 5px;width: 100%;">
+                    <el-carousel height="45px" direction="vertical" indicator-position="none">
+                        <el-carousel-item v-for="item in list" :key="item" style="display: flex;align-items: center;justify-content: center;">
+                            <div class="ktbg_box_right_heads_box">
+                                <div style="width: 26px;height: 26px;border-radius: 50%;overflow: hidden;margin-right: 10px;">
+                                    <img :src="item.img" style="width: 26px;">
+                                </div>
+                                <div class="ktbg_box_right_heads_box_text">{{item.name}} 刚刚办理完成 </div>
+                                <!-- <div class="ktbg_box_right_heads_box_text" style="margin-left: 5px;">{{item.text}}</div> -->
+                            </div>
+                        </el-carousel-item>
+                    </el-carousel>
+                </div>
+
+            </div>
+
+            <!-- 确认服务 -->
+            <div class="ktbg_box_right" id="wzck_kbbk_qrxx">
+
+                <div class="ktbg_box_right_top">
+                    <div class="ktbg_box_right_top_box" style="background-image: url(static/image/title0.png);color: #FFFFFF;">确认服务</div>
+                    <div class="ktbg_box_right_top_box">实时开通</div>
+                </div>
+
+                <div class="ktbg_box_right_qrxx" style="margin-top: 20px;">
+                    <div class="ktbg_box_right_qrxx_name">申请手机号：</div>
+                    <input type="text" id="wzck_kbbk_phone2" maxlength="11" class="ktbg_box_right_qrxx_inp" placeholder="请输入手机号">
+                    <div id="wzck_kbbk_phone2_tps" style="margin-left: 20px;display: none;">请输入正确的手机号</div>
+                </div>
+
+                <div class="ktbg_box_right_qrxx" style="align-items: center;margin-top: 12px;">
+                    <div class="ktbg_box_right_qrxx_name">认证主体：</div>
+                    <div style="display: flex;align-items: center;">
+                        <div class="qrxx_nav_box sqbb_box_a qrxx_nav_boxac" data-subject="个体户" style="margin-bottom: 0;">
+                            <div class="qrxx_nav_box_checked"></div>
+                            <div class="sqbb_box_title" style="color: #333333;font-weight: 400;">个体户</div>
+                        </div>
+                        <div class="qrxx_nav_box sqbb_box_a" data-subject="企业" style="margin-left: 30px;margin-bottom: 0;">
+                            <div class="qrxx_nav_box_checked"></div>
+                            <div class="sqbb_box_title" style="color: #333333;font-weight: 400;">企业</div>
+                        </div>
+                        <div class="qrxx_nav_box sqbb_box_a" data-subject="个人" style="margin-left: 30px;margin-bottom: 0;">
+                            <div class="qrxx_nav_box_checked"></div>
+                            <div class="sqbb_box_title" style="color: #333333;font-weight: 400;">个人</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ktbg_box_right_qrxx" style="align-items: flex-start;margin-top: 20px;margin-bottom: 0">
+                    <div class="ktbg_box_right_qrxx_name">开通服务：</div>
+                    <div class="qrxx_nav" style="margin-top: -10px;">
+                        <div class="qrxx2_nav_box sqbb_box_b qrxx2_nav_boxac" data-index="0">
+                            <div>蓝V认证</div>
+                            <div class="qrxx2_nav_boxright_hot" style="color: #3b72fc;">官方标识</div>
+                            <div class="qrxx2_nav_box_checked"></div>
+                        </div>
+                        <div class="qrxx2_nav_box sqbb_box_b" data-index="1">
+                            <div>蓝V认证 + 线索留资</div>
+                            <div class="qrxx2_nav_boxright_hot" style="color: #B024F8;">获取客户</div>
+                            <div class="qrxx2_nav_box_checked"></div>
+                        </div>
+                        <div class="qrxx2_nav_box sqbb_box_b" data-index="2">
+                            <div style="display: flex;align-items: center;">
+                                蓝V认证 + 商城
+                            </div>
+                            <div class="qrxx2_nav_boxright_hot" style="color: #1ab4f4;">线上开店</div>
+                            <div class="qrxx2_nav_box_checked"></div>
+                        </div>
+                        <div class="qrxx2_nav_box sqbb_box_b" data-index="3">
+                            <div style="display: flex;align-items: center;">
+                                蓝V认证 + 团购
+                            </div>
+                            <div class="qrxx2_nav_boxright_hot" style="color: #FF0000;">同城爆单</div>
+                            <div class="qrxx2_nav_box_checked"></div>
+                        </div>
+                        <div class="qrxx2_nav_box sqbb_box_b" data-index="4">
+                            <div style="display: flex;align-items: center;">
+                                蓝V认证 + 线索留资 + 商城 + 团购
+                            </div>
+                            <div class="qrxx2_nav_boxright_hot" style="color: #ff7e00;">快速增长</div>
+                            <div class="qrxx2_nav_box_checked"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ktbg_box_right_qrxx" style="align-items: flex-end;;margin-bottom: 0px;">
+                    <div class="ktbg_box_right_qrxx_name" style="line-height: 30px;">服务金额：</div>
+                    <div style="color: #FF3E3E;">
+                        <span style="font-size: 18px;">￥</span><span style="font-size: 32px;" class="ktbg_box_right_qrxx_money">296</span>
+                        <!-- <span style="font-size: 14px;color: #666666;text-decoration: line-through;margin-left: 10px;" class="ktbg_box_right_qrxx_moneyOld">¥592</span> -->
+                        <!-- <span style="font-size: 14px;color: #666666;">（一次付费，终生使用）</span> -->
+                    </div>
+                </div>
+
+                <div style="display: flex;justify-content: center;margin-top: 15px;">
+                    <div class="ktbg_box_right_btn wzck_btn_dx" id="wzck_kbbk_ljsq2">点击认证</div>
+                </div>
+
+                <div class="wzck_kbbk_tem1_left_box_name" style="display: flex;align-items: center;justify-content: center;margin-top: 20px;">
+                    <input id="wzck_kbbk_checkbox" data-i="1" type="checkbox" checked="checked" style="margin-right: 5px;">
+                    我已阅读并同意和遵守 <a href="xieyi.html" class="wzck_kbbk_tem1_left_box_name" style="text-decoration: none;" target="_blank">《服务协议》</a>
+                </div>
+
+                <div class="ktbg_box_right_qrxx_tps" style="padding-left: 10px;text-align: center;margin-top: 10px;">
+                    系统和服务实时开通，专属顾问将在1个工作日内与您联系</div>
+
+            </div>
+
+            <!-- 实时开通 -->
+            <div class="ktbg_box_right" id="wzck_kbbk_sskt">
+
+                <div class="ktbg_box_right_top">
+                    <div class="ktbg_box_right_top_box">确认服务</div>
+                    <div class="ktbg_box_right_top_box" style="background-image: url(static/image/title1.png);color: #FFFFFF;">实时开通</div>
+                </div>
+
+                <div id="alipay" style="display: none;">
+                    <div style="text-align: center;margin-top: 60px;"><img src="static/picture/alipay.png"></div>
+                    <div class="ktbg_box_right_sskt_money">￥<span class="wzck_kbbk_money"></span></div>
+                    <div class="ktbg_box_right_sskt_nav">
+                        <div class="ktbg_box_right_sskt_code">
+                            <img src="">
+                            <div class="ktbg_box_right_sskt_code_bg" style="display: none;">
+                                <div class="ktbg_box_right_sskt_code_btn1">我已付款</div>
+                                <div class="ktbg_box_right_sskt_code_btn2">重新扫码</div>
+                            </div>
+                        </div>
+                        <div><img src="static/picture/alipay_yd.png"></div>
+                    </div>
+                    <div class="ktbg_box_right_sskt_bot">
+                        <div class="ktbg_box_right_sskt_bot_i"><img src="static/picture/zhifu_ts.png"></div>
+                        <div class="ktbg_box_right_sskt_bot_text">
+                            <div>使用支付宝扫一扫付款，付款后实时开通</div>
+                            <div>请在5分钟内付款，若不付款则申请无效</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="wxpay" style="display: none;">
+                    <div style="text-align: center;margin-top: 60px;"><img src="static/picture/wxpay.png"></div>
+                    <div class="ktbg_box_right_sskt_money">￥<span class="wzck_kbbk_money"></span></div>
+                    <div class="ktbg_box_right_sskt_nav">
+                        <div class="ktbg_box_right_sskt_code">
+                            <img src="">
+                            <div class="ktbg_box_right_sskt_code_bg" style="display: none;">
+                                <div class="ktbg_box_right_sskt_code_btn1">我已付款</div>
+                                <div class="ktbg_box_right_sskt_code_btn2">重新扫码</div>
+                            </div>
+                        </div>
+                        <div><img src="static/picture/wxpay_yd.png"></div>
+                    </div>
+                    <div class="ktbg_box_right_sskt_bot" style="background: #17B362;">
+                        <div class="ktbg_box_right_sskt_bot_i"><img src="static/picture/zhifu_ts.png"></div>
+                        <div class="ktbg_box_right_sskt_bot_text">
+                            <div>使用微信扫一扫付款，付款后实时开通</div>
+                            <div>请在5分钟内付款，若不付款则申请无效</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 开通成功 -->
+            <div class="ktbg_box_right" id="wzck_kbbk_ktcg" style="display: none;">
+
+                <div class="ktbg_box_right_top">
+                    <div class="ktbg_box_right_top_box">确认服务</div>
+                    <div class="ktbg_box_right_top_box" style="background-image: url(static/image/title1.png);color: #FFFFFF;">实时开通</div>
+                </div>
+
+                <div style="padding-top: 210px;">
+                    <img src="static/picture/ktcg-dui.png" style="display: block;width: 60px;margin: 0 auto;">
+                    <div style="font-weight: 500;font-size: 26px;color: #333333;text-align: center;margin-top: 24px;">
+                        开通成功</div>
+                    <div style="font-size: 16px;color: #999999;text-align: center;margin-top: 18px;"><span id="wzck_kbbk_ktcg_num">3</span>秒后跳转</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="static/js/vue_2.5.17.js" type="text/javascript"></script>
+    <script src="static/js/jquery.min.js" type="text/javascript"></script>
+    <script src="static/js/app.js" type="text/javascript"></script>
+    <script src="static/js/app-login.js" type="text/javascript"></script>
+    <script src="static/js/index.js" type="text/javascript"></script>
+    <script src="static/js/sqarr.js" type="text/javascript"></script>
+    <script src="static/js/anlis.js" type="text/javascript"></script>
+    <script src="static/js/ktfw.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+﻿*{
+	margin: 0;
+	padding: 0;
+}
+
+.top{
+	width: 100%;
+	height: 68px;
+}
+
+.top_cen{
+	width: 1200px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.top_logo img{
+	display: block;
+}
+
+.top_right{
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.top_nav{
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.top_nav_item{
+	height: calc(100% - 30px);
+	display: flex;
+	align-items: center;
+	font-weight: 400;
+	font-size: 16px;
+	color: #666666;
+	margin-right: 50px;
+	cursor: pointer;
+	text-decoration: none;
+	border-bottom: 2px solid #FFFFFF;
+}
+
+.top_nav_itemac{
+	height: calc(100% - 30px);
+	display: flex;
+	align-items: center;
+	font-weight: 400;
+	font-size: 16px;
+	color: #3EBD7B;
+	margin-right: 50px;
+	cursor: pointer;
+	text-decoration: none;
+	border-bottom: 2px solid #3EBD7B;
+}
+
+.top_nav_item:hover{
+	color: #3EBD7B;
+}
+
+.top_btn{
+	width: 100px;
+	height: 31px;
+	border: 1px solid #3EBD7B;
+	border-radius: 31px;
+	text-align: center;
+	line-height: 31px;
+	font-size: 14px;
+	color: #3EBD7B;
+	cursor: pointer;
+}
+
+.top_btn:hover{
+	background: #3EBD7B;
+	color: #FFFFFF;
+}
+
+.top_mobile{
+	position: relative;
+	display: none;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.top_mobile:hover .top_mobile_hover{
+	display: block;
+}
+
+.top_mobile_title{
+	text-decoration: underline;
+}
+
+.top_mobile_hover{
+	display: none;
+	position: absolute;
+	top: 40px;
+	left: -20px;
+	width: 160px;
+	height: 140px;
+	background: #FFFFFF;
+	box-shadow: 0px 1px 8px 0px rgba(58, 62, 65, 0.31);
+	border-radius: 5px;
+}
+
+.top_mobile_hover_i{
+	position: absolute;
+	top: -15px;
+	left: 60px;
+	z-index: 100;
+	width: 30px;
+	height: 30px;
+	background: #FFFFFF;
+	transform: rotate(45deg);
+	box-shadow: 0px 1px 8px 0px rgba(58, 62, 65, 0.31);
+}
+
+.top_mobile_hover_view{
+	position: absolute;
+	z-index: 200;
+	width: 100%;
+	height: 100%;
+	background: #FFFFFF;
+	border-radius: 5px;
+}
+
+.top_mobile_hover_title{
+	text-align: center;
+	font-size: 14px;
+	color: #333333;
+	padding-top: 30px;
+}
+
+.top_mobile_hover_a{
+	display: block;
+	text-decoration: none;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 14px;
+	color: #C2C2C2;
+}
+
+.top_mobile_hover_btn{
+	height: 50px;
+	text-align: center;
+	font-size: 14px;
+	color: #17B362;
+	cursor: pointer;
+}
+
+/* --------------------- */
+
+.wzckSph_btn{
+	width: 370px;
+	height: 70px;
+	background: #FF9A22;
+	border-radius: 35px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 70px;
+	font-size: 26px;
+	color: #FFFFFF;
+	margin-top: 30px;
+	cursor: pointer;
+}
+
+.dlbg{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	display: none;
+	align-items: center;
+	justify-content: center;
+}
+
+.dlbg_box{
+	position: relative;
+	width: 520px;
+	height: 470px;
+	background: #FFFFFF;
+	border-radius: 7px;
+}
+
+.dlbg_box_cuo{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.dlbg_box_title{
+	text-align: center;
+	font-size: 24px;
+	color: #333333;
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+
+.dlbg_box_view{
+	width: 390px;
+	height: 50px;
+	background: #FFFFFF;
+	border: 1px solid #E5E9ED;
+	border-radius: 25px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+}
+
+.dlbg_box_inp{
+	width: 260px;
+	height: 40px;
+	border: none;
+	margin-left: 15px;
+	font-size: 16px;
+	color: #333333;
+	outline:none
+}
+
+.dlbg_box_inp::-webkit-input-placeholder {
+	color: #999999;
+}
+
+.dlbg_box_view_btn{
+	font-size: 16px;
+	color: #18B263;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+.dlbg_box_btn{
+	width: 390px;
+	height: 50px;
+	background: #18B263;
+	border-radius: 25px;
+	margin: 0 auto;
+	margin-top: 67px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 16px;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+.dlbg_box_bot{
+	text-align: center;
+	font-size: 16px;
+	color: #18B263;
+	margin-top: 30px;
+	cursor: pointer;
+}
+
+
